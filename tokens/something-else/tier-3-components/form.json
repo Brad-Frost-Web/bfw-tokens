@@ -1,0 +1,34 @@
+{
+  "form": {
+    "color": {
+      "background": {
+        "default": {
+          "value": "{color.brand.brown.800}"
+        },
+        "focus": {
+          "value": "{color.brand.brown.800}"
+        },
+        "hover": {
+          "value": "{color.brand.brown.800}"
+        },
+        "active": {
+          "value": "{color.brand.brown.800}"
+        }
+      },
+      "border": {
+        "default": {
+          "value": "{color.brand.cream.100}"
+        },
+        "focus": {
+          "value": "{color.brand.cream.300}"
+        },
+        "hover": {
+          "value": "{color.brand.cream.300}"
+        },
+        "active": {
+          "value": "{color.brand.cream.300}"
+        }
+      }
+    }
+  }
+}

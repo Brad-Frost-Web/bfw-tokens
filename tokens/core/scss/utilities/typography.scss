@@ -1,0 +1,116 @@
+@use '../typography-usage.scss' as *;
+
+/* ------------------------------------*\
+    #TYPOGRAPHY UTILITY CLASSES
+\*------------------------------------ */
+//
+// Display text
+//
+.ds-u-theme-typography-display-default {
+  @include ds-theme-typography-display-default(!important);
+}
+
+//
+// Display text small bold
+//
+.ds-u-theme-typography-display-sm {
+  @include ds-theme-typography-display-sm(!important);
+}
+
+//
+// Headline large
+//
+.ds-u-theme-typography-headline-lg {
+  @include ds-theme-typography-headline-lg(!important);
+}
+
+//
+// Headline
+//
+.ds-u-theme-typography-headline-default {
+  @include ds-theme-typography-headline-default(!important);
+}
+
+//
+// Headline small
+//
+.ds-u-theme-typography-headline-sm {
+  @include ds-theme-typography-headline-sm(!important);
+}
+
+//
+// Title large
+//
+.ds-u-theme-typography-title-lg {
+  @include ds-theme-typography-title-lg(!important);
+}
+
+//
+// Title
+//
+.ds-u-theme-typography-title-default {
+  @include ds-theme-typography-title-default(!important);
+}
+
+//
+// Title small
+//
+.ds-u-theme-typography-title-sm {
+  @include ds-theme-typography-title-sm(!important);
+}
+
+//
+// Label large
+//
+.ds-u-theme-typography-label-lg {
+  @include ds-theme-typography-label-lg(!important);
+}
+
+//
+// Label
+//
+.ds-u-theme-typography-label-default {
+  @include ds-theme-typography-label-default(!important);
+}
+
+//
+// Label small
+//
+.ds-u-theme-typography-label-sm {
+  @include ds-theme-typography-label-sm(!important);
+}
+
+//
+// Body large text
+//
+.ds-u-theme-typography-body-lg {
+  @include ds-theme-typography-body-lg(!important);
+}
+
+//
+// Body text
+//
+.ds-u-theme-typography-body-default {
+  @include ds-theme-typography-body-default(!important);
+}
+
+//
+// Body small text
+//
+.ds-u-theme-typography-body-sm {
+  @include ds-theme-typography-body-sm(!important);
+}
+
+//
+// Meta text
+//
+.ds-u-theme-typography-meta-default {
+  @include ds-theme-typography-meta-default(!important);
+}
+
+//
+// Meta small text
+//
+.ds-u-theme-typography-meta-sm {
+  @include ds-theme-typography-meta-sm(!important);
+}

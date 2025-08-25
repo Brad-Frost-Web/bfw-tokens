@@ -1,0 +1,10 @@
+@use '../typography-usage.scss' as *;
+body {
+  @include ds-theme-typography-body-default;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  color: var(--ds-theme-color-content-default);
+  background: var(--ds-theme-color-background-default);
+}

@@ -1,0 +1,63 @@
+/*------------------------------------*\
+    #BREAKPOINT VARIABLES
+\*------------------------------------*/
+
+//
+// Breakpoints
+// 1) SCSS Variables used for media queries
+// 2) Note: presently CSS Custom Properites can't currently be used within
+///   media queries so SCSS variables must be used.
+//
+$ds-bp-sm: 23.4375rem; // 375px
+$ds-bp-md: 48rem; // 768px
+$ds-bp-lg: 60rem; // 960px
+$ds-bp-xl: 75rem; // 1200px
+$ds-bp-xxl: 87.5rem; // 1600px
+
+// Global CSS custom properties that aren't part of a theme's design tokens
+:root,
+:host {
+  --size-base-unit: 0.5rem;
+}
+
+// Size
+// 1) The size function multiplies a provided value ($number)
+//    by the base sizing unit (--size-base-unit)
+// 2) $number should be limited to integers unless absolutely necessary
+@function size($number) {
+  @return calc(0.5rem * #{$number});
+}
+
+//------------------------------------//
+//   #FOCUS
+//------------------------------------//
+
+/**
+ * Visible focus outline for elements on a light background
+ */
+@mixin focus() {
+  outline: var(--ds-theme-border-width-lg) solid var(--ds-theme-focus-ring-color-border-default);
+  outline-offset: var(--ds-theme-offset-focus-ring, size(0.5));
+}
+
+/**
+ * Visible focus outline for elements on a dark background
+ */
+@mixin focusInverted() {
+  outline: var(--ds-theme-border-width-lg) solid var(--ds-theme-focus-ring-color-border-knockout);
+  outline-offset: var(--ds-theme-offset-focus-ring, size(0.5));
+}
+
+/**
+ * Visually hidden from display
+ */
+@mixin visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

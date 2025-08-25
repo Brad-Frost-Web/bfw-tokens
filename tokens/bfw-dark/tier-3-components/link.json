@@ -1,0 +1,38 @@
+{
+  "link": {
+    "color": {
+      "content": {
+        "default": {
+          "value": "{color.brand.pink.600}"
+        },
+        "hover": {
+          "value": "{color.brand.pink.900}"
+        },
+        "active": {
+          "value": "{color.brand.pink.900}"
+        },
+        "visited": {
+          "value": "{color.brand.pink.600}"
+        }
+      }
+    },
+    "knockout": {
+      "color": {
+        "content": {
+          "default": {
+            "value": "{color.brand.pink.100}"
+          },
+          "hover": {
+            "value": "{color.brand.pink.200}"
+          },
+          "active": {
+            "value": "{color.brand.pink.200}"
+          },
+          "visited": {
+            "value": "{color.brand.pink.300}"
+          }
+        }
+      }
+    }
+  }
+}

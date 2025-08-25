@@ -1,0 +1,38 @@
+{
+  "shadow": {
+    "sm": {
+      "x": {
+        "value": "0px"
+      },
+      "y": {
+        "value": "4px"
+      },
+      "blur": {
+        "value": "4px"
+      },
+      "spread": {
+        "value": "0px"
+      },
+      "color": {
+        "value": "rgba(250,247,240, 0.06)"
+      }
+    },
+    "md": {
+      "x": {
+        "value": "4px"
+      },
+      "y": {
+        "value": "12px"
+      },
+      "blur": {
+        "value": "16px"
+      },
+      "spread": {
+        "value": "0px"
+      },
+      "color": {
+        "value": "rgba(250,247,240, 0.06)"
+      }
+    }
+  }
+}

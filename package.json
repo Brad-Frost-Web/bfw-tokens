@@ -1,5 +1,5 @@
 {
-  "name": "bf-tokens",
+  "name": "bfw-tokens",
   "version": "0.1.0",
   "description": "CSS design tokens for Brad Frost Web Design",
   "main": "bf-tokens.css",
@@ -19,12 +19,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bradfrost/bf-tokens.git"
+    "url": "git+https://github.com/bradfrost/bfw-tokens.git"
   },
   "bugs": {
-    "url": "https://github.com/bradfrost/bf-tokens/issues"
+    "url": "https://github.com/bradfrost/bfw-tokens/issues"
   },
-  "homepage": "https://github.com/bradfrost/bf-tokens#readme",
+  "homepage": "https://github.com/bradfrost/bfw-tokens#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -33,6 +33,15 @@
   },
   "scripts": {
     "prepublishOnly": "npm test",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "echo \"No tests specified\" && exit 0",
+    "build": "vite build",
+    "build:tokens": "node config.js --verbose",
+    "publish:tokens": "npm publish --access public"
+  },
+  "devDependencies": {
+    "fast-glob": "^3.3.3",
+    "style-dictionary": "^5.0.2",
+    "vite": "^7.1.3",
+    "vite-plugin-static-copy": "^3.1.2"
   }
-} 
+}

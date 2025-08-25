@@ -1,0 +1,75 @@
+{
+  "color": {
+    "brand": {
+      "cream": {
+        "100": {
+          "value": "#faf7f0"
+        },
+        "200": {
+          "value": "#f8f3e9"
+        },
+        "300": {
+          "value": "#f5efe2"
+        },
+        "400": {
+          "value": "#f3ebdc"
+        },
+        "500": {
+          "value": "#f1e8d7"
+        },
+        "600": {
+          "value": "#d5cebf"
+        },
+        "700": {
+          "value": "#b9b4a7"
+        },
+        "800": {
+          "value": "#9c998f"
+        },
+        "900": {
+          "value": "#807e77"
+        }
+      },
+      "pink": {
+        "100": {
+          "value": "#fee1e3"
+        },
+        "200": {
+          "value": "#f88a9b"
+        },
+        "300": {
+          "value": "#f06182"
+        },
+        "400": {
+          "value": "#e63b70"
+        },
+        "500": {
+          "value": "#d31b5c"
+        },
+        "600": {
+          "value": "#a6154f"
+        },
+        "700": {
+          "value": "#78103e"
+        },
+        "800": {
+          "value": "#4b0a2a"
+        },
+        "900": {
+          "value": "#1e0412"
+        }
+      }
+    },
+    "dataviz": {
+      "orange": {
+        "value": "#f89c52"
+      },
+      "purple": {
+        "value": "#798de3"
+      },
+      "pink-transparent-12": {
+        "value": "#e63b701f"
+      }
+    }
+  }
+}

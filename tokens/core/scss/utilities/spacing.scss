@@ -1,0 +1,503 @@
+@use '../abstracts/variables' as *;
+/*------------------------------------*\
+    #SPACING UTILITY CLASSES
+\*------------------------------------*/
+
+/*------------------------------------*\
+    #MARGIN
+\*------------------------------------*/
+/**
+  * Margin none
+  * 1) Forces margin none to 0
+  */
+.ds-u-margin-none {
+  margin: 0 !important;
+}
+
+/**
+  * Margin small
+  * 1) Forces margin small to 0.5rem
+  */
+.ds-u-margin-sm {
+  margin: size(1) !important;
+}
+
+/**
+  * Margin medium
+  * 1) Forces margin medium to 1rem
+  */
+.ds-u-margin-md {
+  margin: size(2) !important;
+}
+
+/**
+  * Margin large
+  * 1) Forces margin large to size(3)
+  */
+.ds-u-margin-lg {
+  margin: size(3) !important;
+}
+
+/**
+  * Margin xl
+  * 1) Forces margin xl to 2rem
+  */
+.ds-u-margin-xl {
+  margin: size(4) !important;
+}
+
+/**
+  * Margin xxl
+  * 1) Forces margin to 4rem
+  */
+.ds-u-margin-xxl {
+  margin: size(8) !important;
+}
+
+/**
+  * Margin top none
+  * 1) Forces margin top to 0
+  */
+.ds-u-margin-top-none {
+  margin-block-start: 0 !important;
+}
+
+/**
+  * Margin top small
+  * 1) Forces margin top to 0.5rem
+  */
+.ds-u-margin-top-sm {
+  margin-block-start: size(1) !important;
+}
+
+/**
+  * Margin top medium
+  * 1) Forces margin top to 1rem
+  */
+.ds-u-margin-top-md {
+  margin-block-start: size(2) !important;
+}
+
+/**
+  * Margin top large
+  * 1) Forces margin top to size(3)
+  */
+.ds-u-margin-top-lg {
+  margin-block-start: size(3) !important;
+}
+
+/**
+  * Margin top xl
+  * 1) Forces margin top to 2rem
+  */
+.ds-u-margin-top-xl {
+  margin-block-start: size(4) !important;
+}
+
+/**
+  * Margin top xxl
+  * 1) Forces margin top to 4rem
+  */
+.ds-u-margin-top-xxl {
+  margin-block-start: size(8) !important;
+}
+
+/**
+    * Margin right none
+    * 1) Forces margin right to 0
+    */
+.ds-u-margin-right-none {
+  margin-inline-end: 0 !important;
+}
+
+/**
+  * Margin right small
+  * 1) Forces margin right to 0.5rem
+  */
+.ds-u-margin-right-sm {
+  margin-inline-end: size(1) !important;
+}
+
+/**
+  * Margin right medium
+  * 1) Forces margin right to 1rem
+  */
+.ds-u-margin-right-md {
+  margin-inline-end: size(2) !important;
+}
+
+/**
+    * Margin right large
+    * 1) Forces margin right to size(3)
+    */
+.ds-u-margin-right-lg {
+  margin-inline-end: size(3) !important;
+}
+
+/**
+    * Margin right xl
+    * 1) Forces margin right to 2rem
+    */
+.ds-u-margin-right-xl {
+  margin-inline-end: size(4) !important;
+}
+
+/**
+  * Margin right xxl
+  * 1) Forces margin right to 4rem
+  */
+.ds-u-margin-right-xxl {
+  margin-inline-end: size(8) !important;
+}
+
+/**
+  * Margin bottom none
+  * 1) Forces margin bottom to 0
+  */
+.ds-u-margin-bottom-none {
+  margin-block-end: 0 !important;
+}
+
+/**
+  * Margin bottom small
+  * 1) Forces margin bottom to 0.5rem
+  */
+.ds-u-margin-bottom-sm {
+  margin-block-end: size(1) !important;
+}
+
+/**
+  * Margin bottom medium
+  * 1) Forces margin bottom to 1rem
+  */
+.ds-u-margin-bottom-md {
+  margin-block-end: size(2) !important;
+}
+
+/**
+  * Margin bottom large
+  * 1) Forces margin bottom to size(3)
+  */
+.ds-u-margin-bottom-lg {
+  margin-block-end: size(3) !important;
+}
+
+/**
+  * Margin bottom xl
+  * 1) Forces margin bottom to 2rem
+  */
+.ds-u-margin-bottom-xl {
+  margin-block-end: size(4) !important;
+}
+
+/**
+  * Margin bottom xxl
+  * 1) Forces margin bottom to 4rem
+  */
+.ds-u-margin-bottom-xxl {
+  margin-block-end: size(8) !important;
+}
+
+/**
+  * Margin bottom xl
+  * 1) Forces margin bottom to 2rem on small screens and 4rem on large screens
+  */
+.ds-u-margin-bottom-xl-xxl {
+  margin-block-end: size(4) !important;
+
+  @media all and (min-width: $ds-bp-md) {
+    margin-block-end: size(8) !important;
+  }
+}
+
+/**
+  * Margin left none
+  * 1) Forces margin left to 0
+  */
+.ds-u-margin-left-none {
+  margin-inline-start: 0 !important;
+}
+
+/**
+  * Margin left small
+  * 1) Forces margin left to 0.5rem
+  */
+.ds-u-margin-left-sm {
+  margin-inline-start: size(1) !important;
+}
+
+/**
+  * Margin left medium
+  * 1) Forces margin left to 1rem
+  */
+.ds-u-margin-left-md {
+  margin-inline-start: size(2) !important;
+}
+
+/**
+  * Margin left large
+  * 1) Forces margin left to 1.5rem
+  */
+.ds-u-margin-left-lg {
+  margin-inline-start: size(3) !important;
+}
+
+/**
+  * Margin left xl
+  * 1) Forces margin left to 2rem
+  */
+.ds-u-margin-left-xl {
+  margin-inline-start: size(4) !important;
+}
+
+/**
+  * Margin left xxl
+  * 1) Forces margin left to 4rem
+  */
+.ds-u-margin-left-xxl {
+  margin-inline-start: size(8) !important;
+}
+
+/*------------------------------------*\
+    #PADDING
+\*------------------------------------*/
+
+/**
+  * Padding none
+  * 1) Forces padding none to 0
+  */
+.ds-u-padding-none {
+  padding: 0 !important;
+}
+
+/**
+  * Padding small
+  * 1) Forces padding small to 0.5rem
+  */
+.ds-u-padding-sm {
+  padding: size(1) !important;
+}
+
+/**
+  * Padding medium
+  * 1) Forces padding medium to 1rem
+  */
+.ds-u-padding-md {
+  padding: size(2) !important;
+}
+
+/**
+  * Padding large
+  * 1) Forces padding large to size(3)
+  */
+.ds-u-padding-lg {
+  padding: size(3) !important;
+}
+
+/**
+  * Padding xl
+  * 1) Forces padding xl to 2rem
+  */
+.ds-u-padding-xl {
+  padding: size(4) !important;
+}
+
+/**
+  * Padding xxl
+  * 1) Forces padding xxl to 4rem
+  */
+.ds-u-padding-xxl {
+  padding: size(8) !important;
+}
+
+/**
+  * Padding top none
+  * 1) Forces padding top to 0
+  */
+.ds-u-padding-top-none {
+  padding-block-start: 0 !important;
+}
+
+/**
+  * Padding top small
+  * 1) Forces padding top to 0.5rem
+  */
+.ds-u-padding-top-sm {
+  padding-block-start: size(1) !important;
+}
+
+/**
+  * Padding top medium
+  * 1) Forces padding top to 1rem
+  */
+.ds-u-padding-top-md {
+  padding-block-start: size(2) !important;
+}
+
+/**
+  * Padding top large
+  * 1) Forces padding top to size(3)
+  */
+.ds-u-padding-top-lg {
+  padding-block-start: size(3) !important;
+}
+
+/**
+  * Padding top xl
+  * 1) Forces padding top to 2rem
+  */
+.ds-u-padding-top-xl {
+  padding-block-start: size(4) !important;
+}
+
+/**
+  * Padding top xxl
+  * 1) Forces padding top xxl to 4rem
+  */
+.ds-u-padding-top-xxl {
+  padding-block-start: size(8) !important;
+}
+
+/**
+    * Padding right none
+    * 1) Forces padding right to 0
+    */
+.ds-u-padding-right-none {
+  padding-inline-end: 0 !important;
+}
+
+/**
+  * Padding right small
+  * 1) Forces padding right to 0.5rem
+  */
+.ds-u-padding-right-sm {
+  padding-inline-end: size(1) !important;
+}
+
+/**
+  * Padding right medium
+  * 1) Forces padding right to 1rem
+  */
+.ds-u-padding-right-md {
+  padding-inline-end: size(2) !important;
+}
+
+/**
+    * Padding right large
+    * 1) Forces padding right to size(3)
+    */
+.ds-u-padding-right-lg {
+  padding-inline-end: size(3) !important;
+}
+
+/**
+    * Padding right xl
+    * 1) Forces padding right to 2rem
+    */
+.ds-u-padding-right-xl {
+  padding-inline-end: size(4) !important;
+}
+
+/**
+  * Padding right xxl
+  * 1) Forces padding right xxl to 4rem
+  */
+.ds-u-padding-right-xxl {
+  padding-inline-end: size(8) !important;
+}
+
+/**
+  * Padding bottom none
+  * 1) Forces padding bottom to 0
+  */
+.ds-u-padding-bottom-none {
+  padding-block-end: 0 !important;
+}
+
+/**
+  * Padding bottom small
+  * 1) Forces padding bottom to 0.5rem
+  */
+.ds-u-padding-bottom-sm {
+  padding-block-end: size(1) !important;
+}
+
+/**
+  * Padding bottom medium
+  * 1) Forces padding bottom to 1rem
+  */
+.ds-u-padding-bottom-md {
+  padding-block-end: size(2) !important;
+}
+
+/**
+  * Padding bottom large
+  * 1) Forces padding bottom to size(3)
+  */
+.ds-u-padding-bottom-lg {
+  padding-block-end: size(3) !important;
+}
+
+/**
+  * Padding bottom xl
+  * 1) Forces padding bottom to 2rem
+  */
+.ds-u-padding-bottom-xl {
+  padding-block-end: size(4) !important;
+}
+
+/**
+  * Padding bottom xxl
+  * 1) Forces padding bottom xxl to 4rem
+  */
+.ds-u-padding-bottom-xxl {
+  padding-block-end: size(8) !important;
+}
+
+/**
+  * Padding left none
+  * 1) Forces padding left to 0
+  */
+.ds-u-padding-left-none {
+  padding-inline-start: 0 !important;
+}
+
+/**
+  * Padding left small
+  * 1) Forces padding left to 0.5rem
+  */
+.ds-u-padding-left-sm {
+  padding-inline-start: size(1) !important;
+}
+
+/**
+  * Padding left medium
+  * 1) Forces padding left to 1rem
+  */
+.ds-u-padding-left-md {
+  padding-inline-start: size(2) !important;
+}
+
+/**
+  * Padding left large
+  * 1) Forces padding left to 1.5rem
+  */
+.ds-u-padding-left-lg {
+  padding-inline-start: size(3) !important;
+}
+
+/**
+  * Padding left xl
+  * 1) Forces padding left to 2rem
+  */
+.ds-u-padding-left-xl {
+  padding-inline-start: size(4) !important;
+}
+
+/**
+  * Padding left xxl
+  * 1) Forces padding left xxl to 4rem
+  */
+.ds-u-padding-left-xxl {
+  padding-inline-start: size(8) !important;
+}

@@ -1,0 +1,221 @@
+@use './abstracts/variables' as *;
+/* ------------------------------------*\
+    #TYPOGRAPHY APPLICATIONS
+\*------------------------------------ */
+
+//
+// Typography applications are Tier 2 values that map
+// typography presets to high-level UI applications.
+//
+
+@mixin ds-theme-typography-display-default($important: null) {
+  font-family: var(--ds-theme-typography-display-default-mobile-font-family) $important;
+  font-weight: var(--ds-theme-typography-display-default-mobile-font-weight) $important;
+  font-size: var(--ds-theme-typography-display-default-mobile-font-size) $important;
+  line-height: var(--ds-theme-typography-display-default-mobile-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-display-default-mobile-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-display-default-mobile-text-transform) $important;
+
+  @media all and (min-width: $ds-bp-md) {
+    font-family: var(--ds-theme-typography-display-default-font-family) $important;
+    font-weight: var(--ds-theme-typography-display-default-font-weight) $important;
+    font-size: var(--ds-theme-typography-display-default-font-size) $important;
+    line-height: var(--ds-theme-typography-display-default-line-height) $important;
+    letter-spacing: var(--ds-theme-typography-display-default-letter-spacing) $important;
+    text-transform: var(--ds-theme-typography-display-default-text-transform) $important;
+  }
+}
+
+@mixin ds-theme-typography-display-sm($important: null) {
+  font-family: var(--ds-theme-typography-display-sm-mobile-font-family) $important;
+  font-weight: var(--ds-theme-typography-display-sm-mobile-font-weight) $important;
+  font-size: var(--ds-theme-typography-display-sm-mobile-font-size) $important;
+  line-height: var(--ds-theme-typography-display-sm-mobile-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-display-sm-mobile-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-display-sm-mobile-text-transform) $important;
+
+  @media all and (min-width: $ds-bp-md) {
+    font-family: var(--ds-theme-typography-display-sm-font-family) $important;
+    font-weight: var(--ds-theme-typography-display-sm-font-weight) $important;
+    font-size: var(--ds-theme-typography-display-sm-font-size) $important;
+    line-height: var(--ds-theme-typography-display-sm-line-height) $important;
+    letter-spacing: var(--ds-theme-typography-display-sm-letter-spacing) $important;
+    text-transform: var(--ds-theme-typography-display-sm-text-transform) $important;
+  }
+}
+
+//
+// Headline text
+//
+@mixin ds-theme-typography-headline-lg($important: null) {
+  font-family: var(--ds-theme-typography-headline-lg-mobile-font-family) $important;
+  font-weight: var(--ds-theme-typography-headline-lg-mobile-font-weight) $important;
+  font-size: var(--ds-theme-typography-headline-lg-mobile-font-size) $important;
+  line-height: var(--ds-theme-typography-headline-lg-mobile-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-headline-lg-mobile-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-headline-lg-mobile-text-transform) $important;
+
+  @media all and (min-width: $ds-bp-md) {
+    font-family: var(--ds-theme-typography-headline-lg-font-family) $important;
+    font-weight: var(--ds-theme-typography-headline-lg-font-weight) $important;
+    font-size: var(--ds-theme-typography-headline-lg-font-size) $important;
+    line-height: var(--ds-theme-typography-headline-lg-line-height) $important;
+    letter-spacing: var(--ds-theme-typography-headline-lg-letter-spacing) $important;
+    text-transform: var(--ds-theme-typography-headline-lg-text-transform) $important;
+  }
+}
+
+@mixin ds-theme-typography-headline-default($important: null) {
+  font-family: var(--ds-theme-typography-headline-default-mobile-font-family) $important;
+  font-weight: var(--ds-theme-typography-headline-default-mobile-font-weight) $important;
+  font-size: var(--ds-theme-typography-headline-default-mobile-font-size) $important;
+  line-height: var(--ds-theme-typography-headline-default-mobile-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-headline-default-mobile-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-headline-default-mobile-text-transform) $important;
+
+  @media all and (min-width: $ds-bp-md) {
+    font-family: var(--ds-theme-typography-headline-default-font-family) $important;
+    font-weight: var(--ds-theme-typography-headline-default-font-weight) $important;
+    font-size: var(--ds-theme-typography-headline-default-font-size) $important;
+    line-height: var(--ds-theme-typography-headline-default-line-height) $important;
+    letter-spacing: var(--ds-theme-typography-headline-default-letter-spacing) $important;
+    text-transform: var(--ds-theme-typography-headline-default-text-transform) $important;
+  }
+}
+
+@mixin ds-theme-typography-headline-sm($important: null) {
+  font-family: var(--ds-theme-typography-headline-sm-mobile-font-family) $important;
+  font-weight: var(--ds-theme-typography-headline-sm-mobile-font-weight) $important;
+  font-size: var(--ds-theme-typography-headline-sm-mobile-font-size) $important;
+  line-height: var(--ds-theme-typography-headline-sm-mobile-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-headline-sm-mobile-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-headline-sm-mobile-text-transform) $important;
+
+  @media all and (min-width: $ds-bp-md) {
+    font-family: var(--ds-theme-typography-headline-sm-font-family) $important;
+    font-weight: var(--ds-theme-typography-headline-sm-font-weight) $important;
+    font-size: var(--ds-theme-typography-headline-sm-font-size) $important;
+    line-height: var(--ds-theme-typography-headline-sm-line-height) $important;
+    letter-spacing: var(--ds-theme-typography-headline-sm-letter-spacing) $important;
+    text-transform: var(--ds-theme-typography-headline-sm-text-transform) $important;
+  }
+}
+
+//
+// Title text
+//
+@mixin ds-theme-typography-title-lg($important: null) {
+  font-family: var(--ds-theme-typography-title-lg-mobile-font-family) $important;
+  font-weight: var(--ds-theme-typography-title-lg-mobile-font-weight) $important;
+  font-size: var(--ds-theme-typography-title-lg-mobile-font-size) $important;
+  line-height: var(--ds-theme-typography-title-lg-mobile-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-title-lg-mobile-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-title-lg-mobile-text-transform) $important;
+
+  @media all and (min-width: $ds-bp-md) {
+    font-family: var(--ds-theme-typography-title-lg-font-family) $important;
+    font-weight: var(--ds-theme-typography-title-lg-font-weight) $important;
+    font-size: var(--ds-theme-typography-title-lg-font-size) $important;
+    line-height: var(--ds-theme-typography-title-lg-line-height) $important;
+    letter-spacing: var(--ds-theme-typography-title-lg-letter-spacing) $important;
+    text-transform: var(--ds-theme-typography-title-lg-text-transform) $important;
+  }
+}
+
+@mixin ds-theme-typography-title-default($important: null) {
+  font-family: var(--ds-theme-typography-title-default-font-family) $important;
+  font-weight: var(--ds-theme-typography-title-default-font-weight) $important;
+  font-size: var(--ds-theme-typography-title-default-font-size) $important;
+  line-height: var(--ds-theme-typography-title-default-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-title-default-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-title-default-text-transform) $important;
+}
+
+@mixin ds-theme-typography-title-sm($important: null) {
+  font-family: var(--ds-theme-typography-title-sm-font-family) $important;
+  font-weight: var(--ds-theme-typography-title-sm-font-weight) $important;
+  font-size: var(--ds-theme-typography-title-sm-font-size) $important;
+  line-height: var(--ds-theme-typography-title-sm-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-title-sm-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-title-sm-text-transform) $important;
+}
+
+//
+// Label text
+//
+@mixin ds-theme-typography-label-lg($important: null) {
+  font-family: var(--ds-theme-typography-label-lg-font-family) $important;
+  font-weight: var(--ds-theme-typography-label-lg-font-weight) $important;
+  font-size: var(--ds-theme-typography-label-lg-font-size) $important;
+  line-height: var(--ds-theme-typography-label-lg-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-label-lg-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-label-lg-text-transform) $important;
+}
+
+@mixin ds-theme-typography-label-default($important: null) {
+  font-family: var(--ds-theme-typography-label-default-font-family) $important;
+  font-weight: var(--ds-theme-typography-label-default-font-weight) $important;
+  font-size: var(--ds-theme-typography-label-default-font-size) $important;
+  line-height: var(--ds-theme-typography-label-default-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-label-default-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-label-default-text-transform) $important;
+}
+
+@mixin ds-theme-typography-label-sm($important: null) {
+  font-family: var(--ds-theme-typography-label-sm-font-family) $important;
+  font-weight: var(--ds-theme-typography-label-sm-font-weight) $important;
+  font-size: var(--ds-theme-typography-label-sm-font-size) $important;
+  line-height: var(--ds-theme-typography-label-sm-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-label-sm-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-label-sm-text-transform) $important;
+}
+
+//
+// Body text
+//
+@mixin ds-theme-typography-body-lg($important: null) {
+  font-family: var(--ds-theme-typography-body-lg-font-family) $important;
+  font-weight: var(--ds-theme-typography-body-lg-font-weight) $important;
+  font-size: var(--ds-theme-typography-body-lg-font-size) $important;
+  line-height: var(--ds-theme-typography-body-lg-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-body-lg-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-body-lg-text-transform) $important;
+}
+
+@mixin ds-theme-typography-body-default($important: null) {
+  font-family: var(--ds-theme-typography-body-default-font-family) $important;
+  font-weight: var(--ds-theme-typography-body-default-font-weight) $important;
+  font-size: var(--ds-theme-typography-body-default-font-size) $important;
+  line-height: var(--ds-theme-typography-body-default-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-body-default-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-body-default-text-transform) $important;
+}
+
+@mixin ds-theme-typography-body-sm($important: null) {
+  font-family: var(--ds-theme-typography-body-sm-font-family) $important;
+  font-weight: var(--ds-theme-typography-body-sm-font-weight) $important;
+  font-size: var(--ds-theme-typography-body-sm-font-size) $important;
+  line-height: var(--ds-theme-typography-body-sm-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-body-sm-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-body-sm-text-transform) $important;
+}
+
+// Meta text
+
+@mixin ds-theme-typography-meta-default($important: null) {
+  font-family: var(--ds-theme-typography-meta-default-font-family) $important;
+  font-weight: var(--ds-theme-typography-meta-default-font-weight) $important;
+  font-size: var(--ds-theme-typography-meta-default-font-size) $important;
+  line-height: var(--ds-theme-typography-meta-default-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-meta-default-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-meta-default-text-transform) $important;
+}
+
+@mixin ds-theme-typography-meta-sm($important: null) {
+  font-family: var(--ds-theme-typography-meta-sm-font-family) $important;
+  font-weight: var(--ds-theme-typography-meta-sm-font-weight) $important;
+  font-size: var(--ds-theme-typography-meta-sm-font-size) $important;
+  line-height: var(--ds-theme-typography-meta-sm-line-height) $important;
+  letter-spacing: var(--ds-theme-typography-meta-sm-letter-spacing) $important;
+  text-transform: var(--ds-theme-typography-meta-sm-text-transform) $important;
+}
