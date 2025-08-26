@@ -39,7 +39,7 @@ const transformShadowTokens = (dictionary, size, themeTokens) => {
   const color = shadowProps.find((p) => p.path[2] === 'color')?.value || 'transparent';
 
   /* 1 */
-  themeTokens.push(`  --ds-theme-box-shadow-${size}: ${x} ${y} ${blur} ${spread} ${color};`);
+  themeTokens.push(`  --bf-theme-box-shadow-${size}: ${x} ${y} ${blur} ${spread} ${color};`);
 };
 
 /**
@@ -59,9 +59,9 @@ const transformLineHeight = (dictionary, prop, themeTokens) => {
     const lineHeightPx = parseFloat(prop.value.replace('rem', '')) * 16;
     const fontSizePx = parseFloat(fontSizeProp.value.replace('rem', '')) * 16;
     const unitlessValue = (lineHeightPx / fontSizePx).toFixed(2);
-    themeTokens.push(`  --ds-theme-${cleanPath}: ${unitlessValue};`);
+    themeTokens.push(`  --bf-theme-${cleanPath}: ${unitlessValue};`);
   } else {
-    themeTokens.push(`  --ds-theme-${cleanPath}: ${prop.value};`);
+    themeTokens.push(`  --bf-theme-${cleanPath}: ${prop.value};`);
   }
 };
 
@@ -76,14 +76,14 @@ const formatVariables = (dictionary) => {
 
   /**
    * Format token global prefix and tier 2/3 identifier
-   * 1) If the token is from tier-2 or tier-3, prefix it with `ds-theme-`
-   * 2) Otherwise, prefix it with `ds-`
+   * 1) If the token is from tier-2 or tier-3, prefix it with `bf-theme-`
+   * 2) Otherwise, prefix it with `bf-`
    */
   const formatTokenName = (cleanPath, prop) => {
     if (isHigherTierToken(prop.filePath)) {
-      return `--ds-theme-${cleanPath}`;
+      return `--bf-theme-${cleanPath}`;
     }
-    return `--ds-${cleanPath}`;
+    return `--bf-${cleanPath}`;
   };
 
   /**
@@ -189,13 +189,13 @@ const getStyleDictionaryConfig = (theme) => {
       dictionary.allTokens.forEach((token) => {
         // Remove the isHigherTierToken check to include all tokens
         if (token.path[0] === 'box-shadow' && token.path.length > 2) return;
-        const prefix = isHigherTierToken(token.filePath) ? 'ds-theme-' : 'ds-';
+        const prefix = isHigherTierToken(token.filePath) ? 'bf-theme-' : 'bf-';
         transformedTokens[`${prefix}${token.path.join('-')}`] = token.value;
       });
 
       // Process shadow tokens
       shadowSizes.forEach((size) => {
-        transformedTokens[`ds-theme-box-shadow-${size}`] = transformShadowTokensJSON(dictionary, size);
+        transformedTokens[`bf-theme-box-shadow-${size}`] = transformShadowTokensJSON(dictionary, size);
       });
 
       return JSON.stringify(transformedTokens, null, 2);
@@ -259,8 +259,8 @@ const getStyleDictionaryConfig = (theme) => {
   /**
    * Register the name/theme-prefix transform
    * 1) Used to prefix the token name with the theme name
-   * 2) If the token is from tier-2 or tier-3, prefix it with `DsTheme` for JS
-   * 3) Otherwise, prefix it with `Ds` for JS
+   * 2) If the token is from tier-2 or tier-3, prefix it with `BfTheme` for JS
+   * 3) Otherwise, prefix it with `Bf` for JS
    */
   StyleDictionary.registerTransform({
     name: 'name/theme-prefix',
@@ -273,14 +273,14 @@ const getStyleDictionaryConfig = (theme) => {
 
       /* 2 */
       if (isHigherTierToken(token.filePath)) {
-        return `DsTheme${cleanPath
+        return `BfTheme${cleanPath
           .split('-')
           .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
           .join('')}`;
       }
 
       /* 3 */
-      return `Ds${cleanPath
+      return `Bf${cleanPath
         .split('-')
         .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
         .join('')}`;
@@ -316,7 +316,7 @@ const getStyleDictionaryConfig = (theme) => {
     platforms: {
       ts: {
         transformGroup: 'custom/js',
-        prefix: 'Ds',
+        prefix: 'Bf',
         buildPath: './',
         filter: {
           attributes: {
@@ -336,7 +336,7 @@ const getStyleDictionaryConfig = (theme) => {
       },
       css: {
         transformGroup: 'custom/css',
-        prefix: 'ds',
+        prefix: 'bf',
         buildPath: './',
         filter: {
           attributes: {
@@ -356,7 +356,7 @@ const getStyleDictionaryConfig = (theme) => {
       },
       json: {
         transformGroup: 'custom/css',
-        prefix: 'ds',
+        prefix: 'bf',
         buildPath: './',
         filter: {
           attributes: {
